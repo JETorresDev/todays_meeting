@@ -1,0 +1,109 @@
+<!-- Practice exercise for Chapter 10 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Today's Meeting</title>
+	<link rel="icon" href="icon.png">
+	<style>
+		body{
+			background-color: #D5D5D5;
+			background-image: url("room.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		h1 {
+			color: #197a23;
+			font-size: 3em;
+			font-family: "Arial Black", sans-serif;
+			text-shadow: gray 1px 2px 2px;
+			margin-left: 1px;
+			margin-right: 1px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			background-color: white;
+			padding-top: 15px;
+			padding-left: 30px;
+			border-radius: 10px;
+			padding-bottom: 30px;
+		}
+
+		h3 {
+			font-size: 2em;
+			font-family: "Arial", sans-serif;
+			text-shadow: darkslategray 1px 1px 2px;
+			margin-left: 60px;
+			color: #5ec969;
+			margin-top: 1px;
+			margin-bottom: 10px;
+		}
+
+		h3#special {
+			font-size: 2.5em;
+			font-style: italic;
+		}
+
+		h3#coffee {
+			color: #FFCA66;
+			text-shadow: black 2px 2px 2px;
+		}
+
+		div#attendance {
+			margin-left: 60px;
+			margin-top: 12px;
+			font-size: 1.5em;
+			color: #466a7f;
+			font-weight: bold;
+			text-shadow: darkgray 1px 1px 1px;
+			height: 300px;
+			width: 300px;
+			column-count: 2;
+			column-width: 50px;
+			column-gap: 40px;
+			overflow: hidden;
+			padding-left: 80px;
+			padding-right: 50px;
+			padding-top: 30px;	
+			background-color: rgba(255, 255, 255, .75);
+			box-shadow: black 2px 2px 9px;
+			border-radius: 20px;
+			line-height: 30px;
+		}
+
+		em {
+			font-size: 1.3em;
+			text-decoration: underline;
+		}
+
+		div#logo > img{
+			position: absolute;
+			margin-top: 17px;
+			margin-left: 90%;
+			background-color: white;
+			border-radius: 10px;
+			width: 70px;
+			height: 70px;
+			object-fit: contain;
+			box-shadow: gray 2px 2px 9px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="logo">
+		<img src="icon.png" alt="company logo">
+	</div>
+	<h1>Today's Meeting Attendance</h1>
+	<h2 id="today"></h2> <!-- today's date-->
+	<h3 id="special"></h3> 
+	<div id="attendance"></div>
+	<br>
+	<h3><span style= "background-color: rgba(0, 0, 0, .75); padding-top: 10px; padding-bottom: 10px;">These people are on <em>coffee duty</em> tomorrow:</span></h3>
+	<h3 id="coffee"></h3>
+	<script src="script10.js"></script>
+</body>
+</html>
